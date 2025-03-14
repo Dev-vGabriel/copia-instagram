@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+IT+Moderna:wght@100..400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+}
+
+img {
+    max-width: 560px;
+    height: auto;
+    filter: blur(0.8px);
+}
+
+.content-geral-grid {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+   /* grid-template-columns: 600px 1fr; */
+    /*grid-template-columns: repeat(2, 1fr);  */
+    gap: 2rem;
+    padding-top: 12rem;
+}
+
+.content-left {
+    margin-top: 3rem;
+}
+
+.form-container-right {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Playwrite IT Moderna", cursive;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input {
+    border: none;
+    border: 1px solid rgb(224, 224, 224);
+    padding: 0.6rem 0.9rem 0.6rem 0.5rem;
+    border-radius: 3px;
+    width: 80%;
+    background-color: #faf9f9;
+    margin-bottom: 0.4rem;
+}
+
+form input:focus{
+    border-color: #8E8E8E;
+}
+
+form input::placeholder {
+    font-size: 0.8rem;
+    text-align: left;
+}
+
+button {
+    width: 80%;
+    padding: 0.6rem;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    background-color: #48b1f7;
+    margin-top: 0.5rem;
+    margin-bottom: 1.1rem;
+    font-weight: 600;
+}
+
+.linhas {
+    position: relative;
+    width: 80%;
+}
+
+hr {
+    width: 100%; /* Define a largura da linha */
+    margin: 20px auto; /* Adiciona margem e centraliza o hr */
+    border: 0;
+    border: .8px solid gainsboro; 
+}
+
+.linhas span {
+    color: #8E8E8E;
+    background-color: white; /* Cor de fundo para ocultar a linha */
+    padding: 0 15px; /* Espaçamento interno */
+    position: absolute;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.facebook {
+    margin-top: 0.7rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    cursor: pointer;
+    color: #1e9ff5;
+}
+
+.facebook i {
+    font-size: 1.5rem;
+}
+
+.facebook i:hover ~ span {
+    color: #04253b;
+}
+
+.facebook span {
+    font-family: "Inter", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.facebook span:hover {
+    color: #04253b;
+}
+
+a {
+    margin-bottom: 3.2rem;
+    font-size: 0.8rem;
+    color: #04253b;
+}
+
+.cadastrar {
+    margin-bottom: 3rem;
+    font-size: 0.9rem;
+}
+
+.cadastrar span a {
+    color: #1e9ff5;
+    font-weight: 700;
+}
+
+.obter-app p {
+    margin-bottom: 0.9rem;
+    font-size: 0.9rem;
+}
+
+.play-microsoft {
+    display: flex;
+    gap: 1rem;
+}
+
+.play-microsoft img {
+    width: 110px;
+    height: auto;
+    filter: saturate(1.5);
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    margin-top: 4.2rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-content a {
+    color: #737373;
+    font-size: 0.7rem;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-links li {
+    list-style: none;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+    color: #737373;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 1200px) {
+
+    .content-left {
+        display: none;
+    }
+
+    .content-geral-grid {
+        margin-bottom: 5rem;
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 85%;
+    }
+
+    .footer-socials {
+        margin-top: 2rem;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+    .content-geral-grid {
+        margin-bottom: 10rem;
+    }
+    
+    
+
+    footer {
+        display: none;
+    }
+}
+
+
+@media (max-width: 320px) {
+    .content-geral-grid {
+        padding-top: 17rem;
+        padding-bottom: 2rem;
+    }
+
+    footer {
+        display: none;
+    }
+}
+
+
+
+
+
+
