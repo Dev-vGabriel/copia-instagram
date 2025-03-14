@@ -29,8 +29,6 @@ img {
 .content-geral-grid {
     display: grid;
     grid-template-columns: 1fr 350px;
-   /* grid-template-columns: 600px 1fr; */
-    /*grid-template-columns: repeat(2, 1fr);  */
     gap: 2rem;
     padding-top: 12rem;
 }
